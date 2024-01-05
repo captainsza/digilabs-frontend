@@ -545,7 +545,7 @@ const Desktop = () => {
                 </svg>
                 <div className="self-stretch relative leading-[40px] font-medium">
                   I had the pleasure of experiencing the next generation of card
-                  solutions with this incredible product. It's refreshing to see
+                  solutions with this incredible product. it is refreshing to see
                   such innovation in the financial industry.
                 </div>
               </div>
