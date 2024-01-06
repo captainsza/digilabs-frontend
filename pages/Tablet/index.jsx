@@ -151,14 +151,14 @@ const Tablet = () => {
                   <img
                     className="relative w-[102px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/Clip5.png"
+                    src="/images/clip5.png"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center p-2">
                   <img
                     className="relative w-[132px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/Clip6.png"
+                    src="/images/clip6.png"
                   />
                 </div>
               </div>
