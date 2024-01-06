@@ -1,4 +1,6 @@
+import ReactTypingEffect from 'react-typing-effect';
 const Mobile = () => {
+  const words = ["Unleashing","the Next", "Generation ","of Card", "Solutions"];
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h100-20-medium">
       <div className="bg-white box-border w-[375px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
@@ -65,7 +67,30 @@ const Mobile = () => {
               </div>
               <div className="w-[343px] flex flex-col items-start justify-start gap-[16px] text-21xl text-neutral-50 font-h100-20-medium">
                 <div className="relative leading-[48px] font-semibold inline-block w-[343px]">
-                  Unleashing the Next Generation of Card Solutions
+                <ReactTypingEffect
+                          text={words}
+                          speed={100}
+                          eraseSpeed={100}
+                          typingDelay={500}
+                          eraseDelay={1000}
+                          cursorRenderer={cursor => <h1>{cursor}</h1>}
+                          cursorClassName='cursorSizembl'
+                          displayTextRenderer={(text, i) => {
+                            return (
+                              <h1>
+                                {text.split('').map((char, i) => {
+                                  const key = `${i}`;
+                                  return (
+                                    <span
+                                      key={key}
+                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple' , fontWeight: 600 , fontSize:'40px' }}
+                                    >{char}</span>
+                                  );
+                                })}
+                              </h1>
+                            );
+                          }}
+                        />
                 </div>
                 <div className="relative text-lg leading-[28px] font-h50-16-bold text-neutral-400 inline-block w-[343px]">
                   consectetur adipiscing elit, sed do eiusmod tempor incididunt

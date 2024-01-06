@@ -1,6 +1,6 @@
 import ReactTypingEffect from 'react-typing-effect';
 const Desktop = () => {
-  const words = ["Unleashing","the Next", "Generation ","of Card", "Solutions"];
+  const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
 
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h300-32-medium">
@@ -115,6 +115,7 @@ const Desktop = () => {
                           typingDelay={500}
                           eraseDelay={1000}
                           cursorRenderer={cursor => <h1>{cursor}</h1>}
+                          cursorClassName='cursorSize'
                           displayTextRenderer={(text, i) => {
                             return (
                               <h1>
@@ -123,7 +124,7 @@ const Desktop = () => {
                                   return (
                                     <span
                                       key={key}
-                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple' , fontWeight: 600 }}
+                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple' , fontSize:'55px0px' }}
                                     >{char}</span>
                                   );
                                 })}

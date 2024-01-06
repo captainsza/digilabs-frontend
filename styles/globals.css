@@ -12,3 +12,13 @@ body {
 ::after {
     border-width: 0;
 }
+
+.cursorSize {
+    font-size: 57px;
+    /* Set the desired size here */
+}
+
+.cursorSizembl {
+    font-size: 20px;
+    /* Set the desired size here */
+}
