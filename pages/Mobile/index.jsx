@@ -1,16 +1,33 @@
 import ReactTypingEffect from 'react-typing-effect';
+import { motion } from 'framer-motion';
 const Mobile = () => {
+  const sparkleColors = ['purple', 'black']; // Add more colors if you want
+
+const variants = {
+  animate: {
+    borderColor: sparkleColors,
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity
+    }
+  }
+};
   const words = ["Unleashing","the Next", "Generation ","of Card", "Solutions"];
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h100-20-medium">
       <div className="bg-white box-border w-[375px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="self-stretch flex flex-col items-center justify-center">
           <div className="self-stretch flex flex-row items-center justify-center gap-[16px]">
-            <div className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000">
-              <div className="relative leading-[16px] font-medium">
-                Announcement
-              </div>
+          <motion.div
+            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000"
+            variants={variants}
+            initial="animate"
+            animate="animate"
+          >
+            <div className="relative leading-[16px] font-medium">
+              Announcement
             </div>
+          </motion.div>
             <div className="flex-1 relative leading-[16px] font-medium text-neutral-50 text-left">
               We are happy to announce that we raise $2 Million in Seed Funding
             </div>
@@ -122,8 +139,8 @@ const Mobile = () => {
       <div className="bg-white w-[375px] flex flex-col items-center justify-center py-16 px-4 box-border">
         <div className="w-[343px] flex flex-col items-center justify-start">
           <div className="flex flex-col items-center justify-center gap-[24px]">
-            <div className="w-[343px] flex flex-row items-center justify-between">
-              <div className="flex flex-col items-center justify-center p-2">
+            <div className="w-[343px] flex flex-row items-center justify-between" >
+              <div className="flex flex-col items-center justify-center p-2" >
                 <img
                   className="relative w-[65.33px] h-4 overflow-hidden shrink-0 object-cover"
                   alt=""

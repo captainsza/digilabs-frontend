@@ -1,5 +1,19 @@
 import ReactTypingEffect from 'react-typing-effect';
+import { motion } from 'framer-motion';
+
 const Desktop = () => {
+  
+const sparkleColors = ['purple', 'black'];
+
+const variants = {
+  animate: {
+    borderColor: sparkleColors,
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity
+    }
+  }
+};
   const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
 
   return (
@@ -7,11 +21,16 @@ const Desktop = () => {
       <div className="bg-white box-border w-[1440px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="w-[1216px] flex flex-col items-center justify-start">
           <div className="flex flex-row items-center justify-center gap-[16px]">
-            <div className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000">
-              <div className="relative leading-[16px] font-medium">
-                Announcement
-              </div>
+          <motion.div
+            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000"
+            variants={variants}
+            initial="animate"
+            animate="animate"
+          >
+            <div className="relative leading-[16px] font-medium">
+              Announcement
             </div>
+          </motion.div>
             <div className="relative text-sm leading-[20px] font-medium text-neutral-50">
               We are happy to announce that we raise $2 Million in Seed Funding
             </div>
@@ -164,7 +183,14 @@ const Desktop = () => {
       </div>
       <div className="bg-white w-[1440px] flex flex-col items-center justify-center py-24 px-20 box-border">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
-          <div className="w-[1216px] flex flex-row items-center justify-between">
+          <motion.div className="w-[1216px] flex flex-row items-center justify-between" initial={{ x: 0 }}
+                animate={{ x: 100 }} 
+                transition={{
+                  ease: "linear",
+                  duration: 2, 
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }}>
             <div className="flex flex-col items-center justify-center p-2">
               <img
                 className="relative w-[98px] h-6 overflow-hidden shrink-0 object-cover"
@@ -225,7 +251,7 @@ const Desktop = () => {
                 src="/images/clip6.png"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="bg-white w-[1440px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">

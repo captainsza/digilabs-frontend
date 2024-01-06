@@ -1,18 +1,34 @@
 import ReactTypingEffect from 'react-typing-effect';
-
+import { motion } from 'framer-motion';
 
 const Tablet = () => {
+  const sparkleColors = ['purple', 'black']; // Add more colors if you want
+
+const variants = {
+  animate: {
+    borderColor: sparkleColors,
+    transition: {
+      duration: 0.5,
+      yoyo: Infinity
+    }
+  }
+};
   const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h300-32-medium">
       <div className="bg-white box-border w-[768px] flex flex-col items-center justify-center py-2 px-8 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="self-stretch flex flex-col items-center justify-center">
           <div className="flex flex-row items-center justify-center gap-[16px]">
-            <div className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000">
-              <div className="relative leading-[16px] font-medium">
-                Announcement
-              </div>
+          <motion.div
+            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000"
+            variants={variants}
+            initial="animate"
+            animate="animate"
+          >
+            <div className="relative leading-[16px] font-medium">
+              Announcement
             </div>
+          </motion.div>
             <div className="relative text-sm leading-[20px] font-medium text-neutral-50">
               We are happy to announce that we raise $2 Million in Seed Funding
             </div>
