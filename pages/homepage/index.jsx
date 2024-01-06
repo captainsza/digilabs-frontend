@@ -107,7 +107,7 @@ const Desktop = () => {
                     Seamless experience
                   </div>
                   <div className="w-[832px] flex flex-col items-center justify-start gap-[16px] text-43xl text-neutral-50 font-h300-32-medium">
-                  <div className="self-stretch relative leading-[72px] font-semibold">
+                  <div className="self-stretch leading-[72px] font-semibold">
                         <ReactTypingEffect
                           text={words}
                           speed={100}
@@ -124,7 +124,7 @@ const Desktop = () => {
                                   return (
                                     <span
                                       key={key}
-                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple' , fontSize:'55px0px' }}
+                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple'}}
                                     >{char}</span>
                                   );
                                 })}
