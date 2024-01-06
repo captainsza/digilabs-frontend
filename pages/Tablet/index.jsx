@@ -243,7 +243,7 @@ const Tablet = () => {
       </div>
       <div className="bg-white flex flex-row items-center justify-center py-24 px-8 text-21xl">
         <div className="flex flex-row items-center justify-center py-0 px-8">
-          <div className="flex flex-col items-center justify-start gap-[48px]">
+        <div className="w-[640px] flex flex-col items-center justify-start gap-[48px]">
             <div className="w-[640px] flex flex-col items-center justify-start gap-[32px]">
               <div className="self-stretch flex flex-col items-center justify-center gap-[16px]">
                 <div className="self-stretch relative leading-[48px] font-semibold">
@@ -266,16 +266,13 @@ const Tablet = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="flex flex-col items-start justify-start gap-[32px] text-left text-[19.48px]">
-            <div className="flex flex-col items-start justify-start gap-[32px] text-left text-[12.36px]">
-        <div className="w-full md:w-[1216px] flex flex-row items-start justify-start gap-[32px] text-left text-[19.48px]">
-            
-            <div className="relative rounded-lg bg-ghostwhite w-full md:w-[592px] h-[490px] md:h-[490px] overflow-hidden shrink-0">
+          </div>
+          <div className="flex flex-col items-center justify-center gap-[32px] text-left text-[19.48px]">
+  <div className="flex flex-col items-center justify-center gap-[32px] text-left text-[12.36px]">
+    <div className="w-full md:w-[1216px] flex flex-row items-center justify-center gap-[32px] text-left text-[19.48px]">
+      <div className="relative rounded-lg bg-ghostwhite w-full md:w-[592px] h-[490px] md:h-[490px] overflow-hidden shrink-0">
 
-            <img className="relative rounded-lg w-full h-[490px] md:h-[490px] overflow-hidden shrink-0 object-cover" alt="" src="/images/blackphone.png" />
-
-            {/* SVG positioned on top */}
+        <img className="relative rounded-lg w-full h-[490px] md:h-[490px] overflow-hidden shrink-0 object-cover" alt="" src="/images/blackphone.png" />
             <div className="absolute top-[15%] md:top-[15%] left-[15%] md:left-[15%] w-[100%] h-[100%]">
             <svg xmlns="http://www.w3.org/2000/svg" width="59" height="55" viewBox="0 0 59 55" fill="none">
                 <path d="M33 0C33 0 34.4346 13.3898 40.0224 18.9776C45.6102 24.5654 59 26 59 26C59 26 45.6102 27.4346 40.0224 33.0224C34.4346 38.6102 33 52 33 52C33 52 31.5654 38.6102 25.9776 33.0224C20.3898 27.4346 7 26 7 26C7 26 20.3898 24.5654 25.9776 18.9776C31.5654 13.3898 33 0 33 0Z" fill="url(#paint0_linear_1317_394)"/>
