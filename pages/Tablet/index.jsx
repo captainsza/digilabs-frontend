@@ -24,6 +24,8 @@ const variants = {
             variants={variants}
             initial="animate"
             animate="animate"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="relative leading-[16px] font-medium">
               Announcement
@@ -50,14 +52,15 @@ const variants = {
             <div className="flex flex-row items-center justify-end gap-[16px]">
               <div className="flex flex-col items-end justify-center">
                 <div className="flex flex-row items-center justify-center">
-                  <div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px]">
+                  <motion.div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px]" whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                     <div className="relative leading-[20px] font-medium">
                       Login
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5M8.33333 14.1667L12.5 10M12.5 10L8.33333 5.83333M12.5 10H2.5" stroke="#5A6475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
               <div className="flex flex-row items-start justify-end p-2">
@@ -119,14 +122,15 @@ const variants = {
               <div className="w-[640px] flex flex-col items-center justify-start gap-[16px] text-white">
                 <div className="w-[640px] flex flex-row items-center justify-center">
                   <div className="flex flex-row items-center justify-center">
-                    <div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]">
+                    <motion.div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                       <div className="relative leading-[20px] font-medium">
                         Unlock your Card
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                         <path d="M4.66663 10.0001H16.3333M16.3333 10.0001L10.5 4.16675M16.3333 10.0001L10.5 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
                 <div className="relative text-sm leading-[20px] font-medium text-neutral-400 inline-block w-[640px]">

@@ -22,10 +22,12 @@ const variants = {
         <div className="w-[1216px] flex flex-col items-center justify-start">
           <div className="flex flex-row items-center justify-center gap-[16px]">
           <motion.div
-            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000"
+            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000 hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
             variants={variants}
             initial="animate"
             animate="animate"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="relative leading-[16px] font-medium">
               Announcement
@@ -98,14 +100,18 @@ const variants = {
             </div>
             <div className="flex flex-col items-end justify-center text-neutral-400">
               <div className="flex flex-row items-center justify-center">
-                <div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px]">
+                <motion.div 
+                  className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
                   <div className="relative leading-[20px] font-medium">
                     Login
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5M8.33333 14.1667L12.5 10M12.5 10L8.33333 5.83333M12.5 10H2.5" stroke="#5A6475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
+                  </svg>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -162,14 +168,15 @@ const variants = {
                 <div className="flex flex-col items-center justify-start gap-[16px] text-white">
                   <div className="w-[832px] flex flex-row items-center justify-center">
                     <div className="flex flex-row items-center justify-center">
-                      <div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]">
+                      <motion.div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px] hover:bbg-pri-purple-700 cursor-pointer transition-colors duration-200"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                         <div className="relative leading-[20px] font-medium">
                           Unlock your Card
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                       <path d="M4.66666 10.0001H16.3333M16.3333 10.0001L10.5 4.16675M16.3333 10.0001L10.5 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      </div>
+                      </motion.div>
                     </div>
                   </div>
                   <div className="relative text-sm leading-[20px] font-medium text-neutral-400 inline-block w-[832px]">
@@ -270,14 +277,15 @@ const variants = {
                 </div>
                 <div className="flex flex-col items-center justify-center text-base text-pri-purple-400 font-h50-16-bold">
                   <div className="flex flex-row items-start justify-start">
-                    <div className="rounded-lg flex flex-row items-center justify-center gap-[8px]">
+                    <motion.div className="rounded-lg flex flex-row items-center justify-center gap-[8px]"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                       <div className="relative leading-[20px] font-medium">
                         Compare all Pro features
                       </div>
                       <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-<path d="M4.66666 9.99996H16.3333M16.3333 9.99996L10.5 4.16663M16.3333 9.99996L10.5 15.8333" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                    </div>
+                        <path d="M4.66666 9.99996H16.3333M16.3333 9.99996L10.5 4.16663M16.3333 9.99996L10.5 15.8333" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </motion.div>
                   </div>
                 </div>
               </div>
@@ -287,8 +295,8 @@ const variants = {
                 <div className="flex flex-col items-center justify-start gap-[16px]">
                   <div className="rounded-221xl bg-pri-purple-900 flex flex-row items-center justify-center p-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                  <path d="M22 12C22 17.5228 17.5228 22 12 22M22 12C22 6.47715 17.5228 2 12 2M22 12H2M12 22C6.47715 22 2 17.5228 2 12M12 22C14.5013 19.2616 15.9228 15.708 16 12C15.9228 8.29203 14.5013 4.73835 12 2M12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2M2 12C2 6.47715 6.47715 2 12 2" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                   </div>
                   <div className="flex flex-col items-center justify-start gap-[16px]">
                     <div className="relative leading-[20px] font-medium inline-block w-[352px]">
@@ -302,8 +310,8 @@ const variants = {
                 <div className="flex flex-col items-center justify-start gap-[16px]">
                   <div className="rounded-221xl bg-pri-purple-900 flex flex-row items-center justify-center p-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-<path d="M21 2L19 4M19 4L22 7L18.5 10.5L15.5 7.5M19 4L15.5 7.5M11.39 11.61C11.9063 12.1195 12.3168 12.726 12.5978 13.3948C12.8787 14.0635 13.0246 14.7813 13.027 15.5066C13.0295 16.232 12.8884 16.9507 12.6119 17.6213C12.3354 18.2919 11.9291 18.9012 11.4161 19.4141C10.9032 19.9271 10.2939 20.3334 9.6233 20.6099C8.95268 20.8864 8.234 21.0275 7.50863 21.025C6.78327 21.0226 6.06554 20.8767 5.39679 20.5958C4.72804 20.3148 4.12147 19.9043 3.612 19.388C2.61013 18.3507 2.05576 16.9614 2.06829 15.5193C2.08082 14.0772 2.65925 12.6977 3.679 11.678C4.69874 10.6583 6.07821 10.0798 7.52029 10.0673C8.96238 10.0548 10.3517 10.6091 11.389 11.611L11.39 11.61ZM11.39 11.61L15.5 7.5" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                  <path d="M21 2L19 4M19 4L22 7L18.5 10.5L15.5 7.5M19 4L15.5 7.5M11.39 11.61C11.9063 12.1195 12.3168 12.726 12.5978 13.3948C12.8787 14.0635 13.0246 14.7813 13.027 15.5066C13.0295 16.232 12.8884 16.9507 12.6119 17.6213C12.3354 18.2919 11.9291 18.9012 11.4161 19.4141C10.9032 19.9271 10.2939 20.3334 9.6233 20.6099C8.95268 20.8864 8.234 21.0275 7.50863 21.025C6.78327 21.0226 6.06554 20.8767 5.39679 20.5958C4.72804 20.3148 4.12147 19.9043 3.612 19.388C2.61013 18.3507 2.05576 16.9614 2.06829 15.5193C2.08082 14.0772 2.65925 12.6977 3.679 11.678C4.69874 10.6583 6.07821 10.0798 7.52029 10.0673C8.96238 10.0548 10.3517 10.6091 11.389 11.611L11.39 11.61ZM11.39 11.61L15.5 7.5" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                   </div>
                   <div className="flex flex-col items-center justify-start gap-[16px]">
                     <div className="relative leading-[20px] font-medium inline-block w-[352px]">
@@ -317,8 +325,8 @@ const variants = {
                 <div className="flex flex-col items-center justify-start gap-[16px]">
                   <div className="rounded-221xl bg-pri-purple-900 flex flex-row items-center justify-center p-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11M5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13C3 11.8954 3.89543 11 5 11Z" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                      <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11M5 11H19C20.1046 11 21 11.8954 21 13V20C21 21.1046 20.1046 22 19 22H5C3.89543 22 3 21.1046 3 20V13C3 11.8954 3.89543 11 5 11Z" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                   </div>
                   <div className="flex flex-col items-center justify-start gap-[16px]">
                     <div className="relative leading-[20px] font-medium inline-block w-[352px]">
@@ -348,14 +356,15 @@ const variants = {
                 </div>
                 <div className="flex flex-col items-center justify-center text-base text-pri-purple-400 font-h50-16-bold">
                   <div className="flex flex-row items-start justify-start">
-                    <div className="rounded-lg flex flex-row items-center justify-center gap-[8px]">
-                      <div className="relative leading-[20px] font-medium">
-                        Compare all Pro features
-                      </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                        <path d="M4.66666 9.99996H16.3333M16.3333 9.99996L10.5 4.16663M16.3333 9.99996L10.5 15.8333" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+                    <motion.div className="rounded-lg flex flex-row items-center justify-center gap-[8px]"whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}>
+                        <div className="relative leading-[20px] font-medium">
+                          Compare all Pro features
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                          <path d="M4.66666 9.99996H16.3333M16.3333 9.99996L10.5 4.16663M16.3333 9.99996L10.5 15.8333" stroke="#582066" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                      </motion.div>
                   </div>
                 </div>
               </div>
@@ -656,7 +665,8 @@ const variants = {
             </div>
             <div className="self-stretch flex flex-row items-center justify-center gap-[8px] text-base text-white font-h50-16-bold">
               <div className="flex flex-row items-center justify-center">
-                <div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center py-3 px-4 gap-[8px]">
+                <motion.div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center py-3 px-4 gap-[8px]"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                   <div className="relative leading-[20px] font-medium">
                     Unlock your card
                   </div>
@@ -665,9 +675,10 @@ const variants = {
                     alt=""
                     src="/images/credit-card.png"
                   />
-                </div>
+                </motion.div>
               </div>
-              <div className="flex flex-row items-center justify-center text-neutral-400">
+              <motion.div className="flex flex-row items-center justify-center text-neutral-400"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                 <div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-3 px-4 gap-[8px]">
                   <div className="relative leading-[20px] font-medium">
                     Customer support
@@ -678,7 +689,7 @@ const variants = {
                     src="/images/headphones.png"
                   />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -848,13 +859,14 @@ const variants = {
             <div className="flex flex-col items-center justify-start gap-[24px] text-sm">
               <div className="flex flex-row items-start justify-start">
                 <div className="flex flex-row items-center justify-center gap-[24px]">
-                  <div className="flex flex-row items-start justify-start">
+                  <motion.div className="flex flex-row items-start justify-start"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                     <img
                       className="relative w-5 h-5 overflow-hidden shrink-0 object-cover"
                       alt=""
                       src="/images/github.png"
                     />
-                  </div>
+                  </motion.div>
                   <img
                     className="relative w-5 h-5 overflow-hidden shrink-0 object-cover"
                     alt=""

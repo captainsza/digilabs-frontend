@@ -23,6 +23,8 @@ const variants = {
             variants={variants}
             initial="animate"
             animate="animate"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <div className="relative leading-[16px] font-medium">
               Announcement
@@ -48,7 +50,8 @@ const variants = {
           <div className="flex flex-row items-center justify-start gap-[16px]">
             <div className="flex flex-col items-end justify-center">
               <div className="flex flex-row items-center justify-center">
-                <div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px]">
+                <motion.div className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px]"whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                   <div className="relative leading-[20px] font-medium">
                     Login
                   </div>
@@ -57,7 +60,7 @@ const variants = {
                     alt=""
                     src="/images/log-in.png"
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="flex flex-row items-start justify-end p-2">
@@ -119,14 +122,15 @@ const variants = {
             <div className="w-[343px] flex flex-col items-center justify-start gap-[16px] text-white">
               <div className="w-[343px] flex flex-col items-center justify-center">
                 <div className="self-stretch flex flex-row items-center justify-center">
-                  <div className="flex-1 rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]">
+                  <motion.div className="flex-1 rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]" whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}>
                     <div className="relative leading-[20px] font-medium">
                       Unlock your Card
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <path d="M4.16663 10.0001H15.8333M15.8333 10.0001L9.99996 4.16675M15.8333 10.0001L9.99996 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
-                  </div>
+                  </motion.div>
                 </div>
               </div>
               <div className="relative text-sm leading-[20px] font-medium text-neutral-400 inline-block w-[343px]">
