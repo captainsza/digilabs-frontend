@@ -102,14 +102,14 @@ const Mobile = () => {
                 <img
                   className="relative w-[65.33px] h-4 overflow-hidden shrink-0 object-cover"
                   alt=""
-                  src="/images/lottie.png"
+                  src="/images/Clip1.png"
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-2">
                 <img
                   className="relative w-[45.33px] h-4 object-cover"
                   alt=""
-                  src="/images/Clip1.png"
+                  src="/images/Company.png"
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-2">
@@ -117,7 +117,7 @@ const Mobile = () => {
                   <img
                     className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/images/Clip1.png"
+                    src="/images/lottie.png"
                   />
                 </div>
               </div>
@@ -125,7 +125,7 @@ const Mobile = () => {
                 <img
                   className="relative w-[70.67px] h-4 overflow-hidden shrink-0 object-cover"
                   alt=""
-                  src="/images/Clip3.png"
+                  src="/images/Clip2.png"
                 />
               </div>
             </div>
@@ -134,7 +134,7 @@ const Mobile = () => {
                 <img
                   className="relative w-16 h-4 object-cover"
                   alt=""
-                  src="/images/Clip4.png"
+                  src="/images/Clip3.png"
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-2">
@@ -142,7 +142,7 @@ const Mobile = () => {
                   <img
                     className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/images/clip5.png"
+                    src="/images/clip4.png"
                   />
                 </div>
               </div>
@@ -150,14 +150,14 @@ const Mobile = () => {
                 <img
                   className="relative w-[68px] h-4 overflow-hidden shrink-0 object-cover"
                   alt=""
-                  src="/images/clip6.png"
+                  src="/images/clip5.png"
                 />
               </div>
               <div className="flex flex-col items-center justify-center p-2">
                 <img
                   className="relative w-[88px] h-4 overflow-hidden shrink-0 object-cover"
                   alt=""
-                  src="/images/Company.png"
+                  src="/images/clip6.png"
                 />
               </div>
             </div>

@@ -103,14 +103,14 @@ const Tablet = () => {
                   <img
                     className="relative w-[98px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/lottie.png"
+                    src="/images/Clip1.png"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center p-2">
                   <img
                     className="relative w-[68px] h-6 object-cover"
                     alt=""
-                    src="/images/Clip1.png"
+                    src="/images/Company.png"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center p-2">
@@ -118,7 +118,7 @@ const Tablet = () => {
                     <img
                       className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                       alt=""
-                      src="/images/Clip2.png"
+                      src="/images/lottie.png"
                     />
                   </div>
                 </div>
@@ -126,14 +126,14 @@ const Tablet = () => {
                   <img
                     className="relative w-[106px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/Clip3.png"
+                    src="/images/Clip2.png"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center p-2">
                   <img
                     className="relative w-[98px] h-6 object-cover"
                     alt=""
-                    src="/images/Clip4.png"
+                    src="/images/Clip3.png"
                   />
                 </div>
               </div>
@@ -143,7 +143,7 @@ const Tablet = () => {
                     <img
                       className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                       alt=""
-                      src="/images/Clip5.png"
+                      src="/images/Clip4.png"
                     />
                   </div>
                 </div>
@@ -151,14 +151,14 @@ const Tablet = () => {
                   <img
                     className="relative w-[102px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/Clip6.png"
+                    src="/images/Clip5.png"
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center p-2">
                   <img
                     className="relative w-[132px] h-6 overflow-hidden shrink-0 object-cover"
                     alt=""
-                    src="/images/Company.png"
+                    src="/images/Clip6.png"
                   />
                 </div>
               </div>
