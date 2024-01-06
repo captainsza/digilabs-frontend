@@ -129,10 +129,10 @@ const variants = {
                   <div className="self-stretch leading-[72px] font-semibold">
                         <ReactTypingEffect
                           text={words}
-                          speed={100}
-                          eraseSpeed={100}
-                          typingDelay={500}
-                          eraseDelay={1000}
+                          speed={300}
+                          eraseSpeed={50}
+                          typingDelay={100}
+                          eraseDelay={50}
                           cursorRenderer={cursor => <h1>{cursor}</h1>}
                           cursorClassName='cursorSize'
                           displayTextRenderer={(text, i) => {
