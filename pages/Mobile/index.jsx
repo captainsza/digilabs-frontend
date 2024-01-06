@@ -142,7 +142,7 @@ const Mobile = () => {
                   <img
                     className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
                     alt=""
-                    src="/images/clip4.png"
+                    src="/images/Clip4.png"
                   />
                 </div>
               </div>
