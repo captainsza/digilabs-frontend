@@ -1,4 +1,7 @@
+import ReactTypingEffect from 'react-typing-effect';
 const Desktop = () => {
+  const words = ["Unleashing","the Next", "Generation ","of Card", "Solutions"];
+
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h300-32-medium">
       <div className="bg-white box-border w-[1440px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
@@ -104,9 +107,31 @@ const Desktop = () => {
                     Seamless experience
                   </div>
                   <div className="w-[832px] flex flex-col items-center justify-start gap-[16px] text-43xl text-neutral-50 font-h300-32-medium">
-                    <div className="self-stretch relative leading-[72px] font-semibold">
-                      Unleashing the Next Generation of Card Solutions
-                    </div>
+                  <div className="self-stretch relative leading-[72px] font-semibold">
+                        <ReactTypingEffect
+                          text={words}
+                          speed={100}
+                          eraseSpeed={100}
+                          typingDelay={500}
+                          eraseDelay={1000}
+                          cursorRenderer={cursor => <h1>{cursor}</h1>}
+                          displayTextRenderer={(text, i) => {
+                            return (
+                              <h1>
+                                {text.split('').map((char, i) => {
+                                  const key = `${i}`;
+                                  return (
+                                    <span
+                                      key={key}
+                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple' , fontWeight: 600 }}
+                                    >{char}</span>
+                                  );
+                                })}
+                              </h1>
+                            );
+                          }}
+                        />
+                      </div>
                     <div className="relative text-lg leading-[28px] font-h50-16-bold text-neutral-400 inline-block w-[648px]">
                       consectetur adipiscing elit, sed do eiusmod tempor
                       incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -122,8 +147,8 @@ const Desktop = () => {
                           Unlock your Card
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-<path d="M4.66666 10.0001H16.3333M16.3333 10.0001L10.5 4.16675M16.3333 10.0001L10.5 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                      <path d="M4.66666 10.0001H16.3333M16.3333 10.0001L10.5 4.16675M16.3333 10.0001L10.5 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
                       </div>
                     </div>
                   </div>
