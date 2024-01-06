@@ -1,9 +1,12 @@
-export async function getStaticPaths() {
-    // Replace this with your code to fetch post IDs or other parameters
-    const paths = yourData.map((post) => ({
-      params: { id: post.id.toString() },
-    }));
-  
-    return { paths, fallback: false };
-  }
-  
+import { useRouter } from 'next/router'
+
+export default function Post() {
+  const router = useRouter()
+  const { id } = router.query
+
+  return (
+    <div>
+      <h1>Post: {id}</h1>
+    </div>
+  )
+}
