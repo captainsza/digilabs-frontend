@@ -17,7 +17,7 @@ const variants = {
 
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h300-32-medium">
-      <div className="bg-white box-border w-[1900] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
+      <div className="bg-white box-border w-[2050px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="w-[1216px] flex flex-col items-center justify-start">
           <div className="flex flex-row items-center justify-center gap-[16px]">
             <motion.div className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000 hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
@@ -37,7 +37,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white box-border w-[1900] h-20 flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
+      <div className="bg-white box-border w-[2050px] h-20 flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="h-10 flex flex-col items-end justify-between py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-row items-center justify-between">
             <div className="flex flex-col items-start justify-center p-2">
@@ -114,7 +114,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="relative w-[1900] h-[532px] text-pri-purple-400 font-h50-16-bold">
+      <div className="relative w-[2050px] h-[532px] text-pri-purple-400 font-h50-16-bold">
       <img
           className="absolute h-[86.47%] w-[43.82%] top-[8.27%] right-[28.13%] bottom-[5.26%] left-[28.06%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
@@ -185,7 +185,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <motion.div className="w-[1216px] flex flex-row items-center justify-between"initial={{ x: 0 }}
                 animate={{ x: 100 }} 
@@ -258,7 +258,7 @@ const variants = {
           </motion.div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center gap-[96px]">
             <div className="w-[1216px] flex flex-col items-center justify-center">
@@ -337,7 +337,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center gap-[96px]">
             <div className="w-[1216px] flex flex-col items-center justify-center">
@@ -510,7 +510,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border text-29xl text-pri-purple-400">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-29xl text-pri-purple-400">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-row items-start justify-start gap-[32px]">
@@ -582,7 +582,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border text-13xl text-neutral-100">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-13xl text-neutral-100">
         <div className="w-[1280px] flex flex-col items-center justify-center p-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center">
             <div className="w-[824px] flex flex-col items-center justify-start gap-[48px]">
@@ -648,7 +648,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[1900] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="self-stretch flex flex-col items-center justify-center py-0 px-8">
           <div className="w-[1216px] flex flex-col items-center justify-start gap-[32px]">
             <div className="self-stretch flex flex-row items-center justify-center">
@@ -687,7 +687,7 @@ const variants = {
           </div>
         </div>
       </div>
-      <div className="bg-white box-border w-[1900] flex flex-col items-center justify-center pt-24 px-20 pb-10 text-neutral-400 font-h50-16-bold border-t-[1px] border-solid border-neutral-1000">
+      <div className="bg-white box-border w-[2050px] flex flex-col items-center justify-center pt-24 px-20 pb-10 text-neutral-400 font-h50-16-bold border-t-[1px] border-solid border-neutral-1000">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="flex flex-col items-start justify-start gap-[96px]">
             <div className="flex flex-col items-start justify-start gap-[64px]">
