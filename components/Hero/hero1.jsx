@@ -1,8 +1,22 @@
 import ReactTypingEffect from 'react-typing-effect';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, {useState , useEffect} from 'react';
+import axios from 'axios';
 const Hero =()=>{
-    
+  const [buttonText, setButtonText] = useState('');
+  useEffect(() => {
+  
+    const fetchButtonText = async () => {
+      try {
+        const response = await axios.get('/api/buttonText'); 
+        setButtonText(response.data.buttonText);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchButtonText();
+  }, []); 
   const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
   return(
     <div className="relative w-[375px] h-[476px] text-pri-purple-400 font-h50-16-bold">
@@ -57,7 +71,7 @@ const Hero =()=>{
                   <motion.div className="flex-1 rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px]" whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}>
                     <div className="relative leading-[20px] font-medium">
-                      Unlock your Card
+                    {buttonText || "Unlock your Card"}
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <path d="M4.16663 10.0001H15.8333M15.8333 10.0001L9.99996 4.16675M15.8333 10.0001L9.99996 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>

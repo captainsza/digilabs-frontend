@@ -1,6 +1,23 @@
-import React from 'react';
+import React, {useState , useEffect} from 'react';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 const Navbar = () => {
+  const [logoUrl, setLogoUrl] = useState();
+
+  useEffect(() => {
+
+    const fetchLogo = async () => {
+  try {
+    const response = await axios.get('/api/logoUrl');
+    
+    setLogoUrl(response.data.imageUrl);
+  } catch (error) {
+    
+  }
+};
+
+    fetchLogo();
+  }, []);
     return (
         <div className="bg-white flex flex-col items-center justify-start py-5 px-4 text-neutral-400 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="w-[343px] flex flex-row items-center justify-between">
@@ -9,7 +26,7 @@ const Navbar = () => {
               <img
                 className="relative w-[84px] h-4 object-cover"
                 alt=""
-                src="/images/Vector.jpg"
+                src={logoUrl ? logoUrl : '/images/Vector.jpg'}
               />
             </div>
           </div>
