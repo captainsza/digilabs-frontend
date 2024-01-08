@@ -1,16 +1,35 @@
-import React from 'react';
+import React, {useState , useEffect} from 'react';
 import { motion } from 'framer-motion';
+import axios from 'axios';
+import Link from 'next/link';
 const Navbar = () => {
+  const [logoUrl, setLogoUrl] = useState();
+
+  useEffect(() => {
+
+    const fetchLogo = async () => {
+  try {
+    const response = await axios.get('/api/logoUrl');
+    
+    setLogoUrl(response.data.imageUrl);
+  } catch (error) {
+    
+  }
+};
+
+    fetchLogo();
+  }, []);
+  
     return (
         <div className="bg-white flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="w-[1216px] flex flex-row items-center justify-between">
-            <div className="flex flex-col items-start justify-center p-2">
+            <div className={`flex flex-col items-start justify-center p-2 ${logoUrl ? 'w-[84px] h-[84px] rounded-full' : 'w-[84px] h-4'}`}>
               <div className="flex flex-col items-start justify-start py-1 px-2">
                 <img
-                  className="relative w-[84px] h-4 object-cover"
-                  alt=""
-                  src="/images/Vector.jpg"
+                  className="relative w-full h-full object-cover"
+                  alt="logo"
+                  src={logoUrl ? logoUrl : '/images/Vector.jpg'}
                 />
               </div>
             </div>
@@ -63,6 +82,22 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col items-end justify-center text-neutral-400">
               <div className="flex flex-row items-center justify-center">
+                <Link href="/Admin" passHref style={{ textDecoration: 'none' }}>
+                  <motion.div
+                    className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    
+                  >
+                    <div className="relative leading-[20px] font-medium">
+                      Admin
+                    </div>
+                  </motion.div>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col items-end justify-center text-neutral-400">
+              <div className="flex flex-row items-center justify-center">
                 <motion.div 
                   className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
                   whileHover={{ scale: 1.05 }}
@@ -77,6 +112,7 @@ const Navbar = () => {
                 </motion.div>
               </div>
             </div>
+            
           </div>
         </div>
       </div>

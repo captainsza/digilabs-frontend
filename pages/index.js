@@ -1,4 +1,4 @@
-import Desktop from "./homepage";
+import Desktop from "./desktop";
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import Tablet from "./Tablet";
