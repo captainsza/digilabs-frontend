@@ -5,7 +5,7 @@ const Hero =()=>{
     
   const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
   return(
-    <div className="relative w-[2050px] h-[532px] text-pri-purple-400 font-h50-16-bold">
+    <div className="relative w-[1920px] h-[532px] text-pri-purple-400 font-h50-16-bold">
       <img
           className="absolute h-[86.47%] w-[43.82%] top-[8.27%] right-[28.13%] bottom-[5.26%] left-[28.06%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""

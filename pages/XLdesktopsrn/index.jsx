@@ -10,7 +10,7 @@ const XLDesktop = () => {
       <Navbar/>
       <Hero/>
       <Animatelogo/>
-      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center gap-[96px]">
             <div className="w-[1216px] flex flex-col items-center justify-center">
@@ -89,7 +89,7 @@ const XLDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center gap-[96px]">
             <div className="w-[1216px] flex flex-col items-center justify-center">
@@ -262,7 +262,7 @@ const XLDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-29xl text-pri-purple-400">
+      <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border text-29xl text-pri-purple-400">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="flex flex-col items-center justify-center">
             <div className="flex flex-row items-start justify-start gap-[32px]">
@@ -334,7 +334,7 @@ const XLDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-13xl text-neutral-100">
+      <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border text-13xl text-neutral-100">
         <div className="w-[1280px] flex flex-col items-center justify-center p-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center">
             <div className="w-[824px] flex flex-col items-center justify-start gap-[48px]">
@@ -400,7 +400,7 @@ const XLDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
+      <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="self-stretch flex flex-col items-center justify-center py-0 px-8">
           <div className="w-[1216px] flex flex-col items-center justify-start gap-[32px]">
             <div className="self-stretch flex flex-row items-center justify-center">
@@ -439,7 +439,7 @@ const XLDesktop = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white box-border w-[2050px] flex flex-col items-center justify-center pt-24 px-20 pb-10 text-neutral-400 font-h50-16-bold border-t-[1px] border-solid border-neutral-1000">
+      <div className="bg-white box-border w-[1920px] flex flex-col items-center justify-center pt-24 px-20 pb-10 text-neutral-400 font-h50-16-bold border-t-[1px] border-solid border-neutral-1000">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="flex flex-col items-start justify-start gap-[96px]">
             <div className="flex flex-col items-start justify-start gap-[64px]">

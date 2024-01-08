@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const Animatelogo = () => {
     return(
-       <div className="bg-white w-[2050px] flex flex-col items-center justify-center py-24 px-20 box-border">
+       <div className="bg-white w-[1920px] flex flex-col items-center justify-center py-24 px-20 box-border">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <motion.div className="w-[1216px] flex flex-row items-center justify-between"initial={{ x: 0 }}
                 animate={{ x: 100 }} 

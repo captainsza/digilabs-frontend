@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const Navbar = () => {
     return (
-        <div className="bg-white box-border w-[2050px] h-20 flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
+        <div className="bg-white box-border w-[1920px] h-20 flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="h-10 flex flex-col items-end justify-between py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-row items-center justify-between">
             <div className="flex flex-col items-start justify-center p-2">
