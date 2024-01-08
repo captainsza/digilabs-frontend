@@ -1,267 +1,15 @@
-import ReactTypingEffect from 'react-typing-effect';
 import { motion } from 'framer-motion';
-
+import Header from '@/components/headers/header0';
+import Navbar from '@/components/Navbars/navbar0';
+import Hero from '@/components/Hero/hero0';
+import Animatelogo from '@/components/Companylogos/animation-logo0';
 const Desktop = () => {
-  
-const sparkleColors = ['purple', 'black'];
-
-const variants = {
-  animate: {
-    borderColor: sparkleColors,
-    transition: {
-      duration: 0.5,
-      yoyo: Infinity
-    }
-  }
-};
-
-  const words = ["Unleashing","the Next","Generation", "of Card", "Solutions"];
-
   return (
     <div className="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start text-center text-base text-neutral-50 font-h300-32-medium">
-      <div className="bg-white box-border w-[1440px] flex flex-col items-center justify-center p-2 text-xs text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
-        <div className="w-[1216px] flex flex-col items-center justify-start">
-          <div className="flex flex-row items-center justify-center gap-[16px]">
-          <motion.div
-            className="rounded-221xl bg-neutral-1300 flex flex-row items-center justify-center py-1 px-2 border-[1px] border-solid border-neutral-1000 hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
-            variants={variants}
-            initial="animate"
-            animate="animate"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <div className="relative leading-[16px] font-medium">
-              Announcement
-            </div>
-          </motion.div>
-            <div className="relative text-sm leading-[20px] font-medium text-neutral-50">
-              We are happy to announce that we raise $2 Million in Seed Funding
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-white flex flex-col items-center justify-center py-5 px-20 text-neutral-200 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
-        <div className="flex flex-col items-center justify-center py-0 px-8">
-          <div className="w-[1216px] flex flex-row items-center justify-between">
-            <div className="flex flex-col items-start justify-center p-2">
-              <div className="flex flex-col items-start justify-start py-1 px-2">
-                <img
-                  className="relative w-[84px] h-4 object-cover"
-                  alt=""
-                  src="/images/Vector.jpg"
-                />
-              </div>
-            </div>
-            <div className="flex flex-row items-start justify-start gap-[16px]">
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start gap-[8px]">
-                  <div className="relative leading-[20px] font-medium">
-                    Card access
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                    <path d="M5.5 7.5L10.5 12.5L15.5 7.5" stroke="#363C46" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start">
-                  <div className="relative leading-[20px] font-medium">
-                    Banking
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start">
-                  <div className="relative leading-[20px] font-medium">
-                    Processing
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start">
-                  <div className="relative leading-[20px] font-medium">
-                    About
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start">
-                  <div className="relative leading-[20px] font-medium">
-                    Carrier
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col items-start justify-start p-2">
-                <div className="flex flex-row items-center justify-start">
-                  <div className="relative leading-[20px] font-medium">
-                    Contact
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col items-end justify-center text-neutral-400">
-              <div className="flex flex-row items-center justify-center">
-                <motion.div 
-                  className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <div className="relative leading-[20px] font-medium">
-                    Login
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M12.5 2.5H15.8333C16.2754 2.5 16.6993 2.67559 17.0118 2.98816C17.3244 3.30072 17.5 3.72464 17.5 4.16667V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H12.5M8.33333 14.1667L12.5 10M12.5 10L8.33333 5.83333M12.5 10H2.5" stroke="#5A6475" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </motion.div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="relative w-[1440px] h-[532px] text-pri-purple-400 font-h50-16-bold">
-        <img
-          className="absolute h-[86.47%] w-[43.82%] top-[8.27%] right-[28.13%] bottom-[5.26%] left-[28.06%] max-w-full overflow-hidden max-h-full object-cover"
-          alt=""
-          src="/images/Mesh.png"
-        />
-        <div className="absolute h-[113.53%] w-full top-[-6.77%] right-[0%] bottom-[-6.77%] left-[0%] flex flex-col items-center justify-center pt-32 px-20 pb-8 box-border">
-          <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
-            <div className="w-[1216px] flex flex-col items-center justify-center">
-              <div className="w-[832px] flex flex-col items-start justify-start gap-[32px]">
-                <div className="w-[832px] flex flex-col items-center justify-start gap-[16px]">
-                  <div className="relative leading-[20px] font-medium inline-block w-[832px]">
-                    Seamless experience
-                  </div>
-                  <div className="w-[832px] flex flex-col items-center justify-start gap-[16px] text-43xl text-neutral-50 font-h300-32-medium">
-                  <div className="self-stretch leading-[72px] font-semibold">
-                        <ReactTypingEffect
-                          text={words}
-                          speed={300}
-                          eraseSpeed={50}
-                          typingDelay={100}
-                          eraseDelay={50}
-                          cursorRenderer={cursor => <h1>{cursor}</h1>}
-                          cursorClassName='cursorSize'
-                          displayTextRenderer={(text, i) => {
-                            return (
-                              <h1>
-                                {text.split('').map((char, i) => {
-                                  const key = `${i}`;
-                                  return (
-                                    <span
-                                      key={key}
-                                      style={{ color: i%2 === 0 ? 'neutral' : 'purple'}}
-                                    >{char}</span>
-                                  );
-                                })}
-                              </h1>
-                            );
-                          }}
-                        />
-                      </div>
-                    <div className="relative text-lg leading-[28px] font-h50-16-bold text-neutral-400 inline-block w-[648px]">
-                      consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center justify-start gap-[16px] text-white">
-                  <div className="w-[832px] flex flex-row items-center justify-center">
-                    <div className="flex flex-row items-center justify-center">
-                      <motion.div className="rounded-lg bg-pri-purple-400 flex flex-row items-center justify-center p-4 gap-[8px] hover:bbg-pri-purple-700 cursor-pointer transition-colors duration-200"whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}>
-                        <div className="relative leading-[20px] font-medium">
-                          Unlock your Card
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
-                      <path d="M4.66666 10.0001H16.3333M16.3333 10.0001L10.5 4.16675M16.3333 10.0001L10.5 15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                      </motion.div>
-                    </div>
-                  </div>
-                  <div className="relative text-sm leading-[20px] font-medium text-neutral-400 inline-block w-[832px]">
-                    *No credit card required
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-white w-[1440px] flex flex-col items-center justify-center py-24 px-20 box-border">
-        <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
-          <motion.div className="w-[1216px] flex flex-row items-center justify-between" initial={{ x: 0 }}
-                animate={{ x: 100 }} 
-                transition={{
-                  ease: "linear",
-                  duration: 2, 
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[98px] h-6 overflow-hidden shrink-0 object-cover"
-                alt=""
-                src="/images/Clip1.png"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[68px] h-6 object-cover"
-                alt=""
-                src="/images/Company.png"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <div className="relative w-[124px] h-6">
-                <img
-                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
-                  alt=""
-                  src="/images/lottie.png"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[106px] h-6 overflow-hidden shrink-0 object-cover"
-                alt=""
-                src="/images/Clip2.png"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[98px] h-6 object-cover"
-                alt=""
-                src="/images/Clip3.png"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <div className="relative w-[120px] h-6">
-                <img
-                  className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
-                  alt=""
-                  src="/images/Clip4.png"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[102px] h-6 overflow-hidden shrink-0 object-cover"
-                alt=""
-                src="/images/clip5.png"
-              />
-            </div>
-            <div className="flex flex-col items-center justify-center p-2">
-              <img
-                className="relative w-[132px] h-6 overflow-hidden shrink-0 object-cover"
-                alt=""
-                src="/images/clip6.png"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div>
+      <Header/>
+      <Navbar/>
+      <Hero/>     
+      <Animatelogo/>
       <div className="bg-white w-[1440px] flex flex-col items-center justify-center py-24 px-20 box-border text-21xl">
         <div className="w-[1280px] flex flex-col items-center justify-center py-0 px-8 box-border">
           <div className="w-[1216px] flex flex-col items-center justify-center gap-[96px]">
@@ -874,15 +622,15 @@ const variants = {
                     src="/images/Social.png"
                   />
                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <g clip-path="url(#clip0_1313_829)">
-    <path d="M16.9307 4.24315C15.6557 3.66815 14.289 3.24315 12.8599 3.00148C12.8471 2.99904 12.834 3.00061 12.8222 3.00599C12.8104 3.01136 12.8006 3.02027 12.794 3.03148C12.619 3.33898 12.424 3.73981 12.2874 4.05648C10.7716 3.83001 9.23064 3.83001 7.71489 4.05648C7.56267 3.70553 7.39102 3.36334 7.20073 3.03148C7.19428 3.02013 7.18452 3.01102 7.17276 3.00537C7.16099 2.99971 7.14779 2.99777 7.13489 2.99982C5.70656 3.24148 4.3399 3.66648 3.06407 4.24231C3.05309 4.24692 3.04379 4.25477 3.0374 4.26481C0.444078 8.0773 -0.266754 11.7957 0.0824121 15.4673C0.0833837 15.4763 0.0861751 15.485 0.0906162 15.4929C0.0950574 15.5008 0.101055 15.5077 0.108245 15.5131C1.6219 16.6152 3.31018 17.4547 5.1024 17.9965C5.11489 18.0003 5.12826 18.0003 5.14074 17.9964C5.15323 17.9926 5.16426 17.985 5.1724 17.9748C5.5574 17.4581 5.90073 16.9123 6.19406 16.339C6.21156 16.3056 6.1949 16.2656 6.1599 16.2523C5.62157 16.0496 5.09997 15.8049 4.5999 15.5206C4.59091 15.5155 4.58334 15.5082 4.57786 15.4995C4.57239 15.4907 4.56917 15.4807 4.56851 15.4704C4.56785 15.46 4.56976 15.4497 4.57408 15.4403C4.57839 15.4309 4.58498 15.4227 4.59323 15.4165C4.69823 15.339 4.80323 15.2581 4.90323 15.1773C4.91223 15.17 4.92308 15.1654 4.93455 15.1639C4.94603 15.1625 4.95769 15.1642 4.96823 15.169C8.24072 16.639 11.7849 16.639 15.019 15.169C15.0296 15.1639 15.0414 15.162 15.053 15.1633C15.0647 15.1646 15.0757 15.1692 15.0849 15.1765C15.1849 15.2581 15.289 15.339 15.3949 15.4165C15.4032 15.4226 15.4099 15.4307 15.4144 15.44C15.4188 15.4493 15.4209 15.4596 15.4204 15.4699C15.4199 15.4802 15.4168 15.4903 15.4115 15.4991C15.4062 15.508 15.3988 15.5154 15.3899 15.5206C14.8915 15.8073 14.3732 16.0498 13.829 16.2515C13.8207 16.2545 13.8131 16.2593 13.8067 16.2655C13.8003 16.2717 13.7954 16.2792 13.7922 16.2875C13.7889 16.2958 13.7875 16.3047 13.788 16.3135C13.7884 16.3224 13.7908 16.3311 13.7949 16.339C14.0949 16.9115 14.4382 17.4565 14.8157 17.974C14.8236 17.9846 14.8345 17.9925 14.847 17.9967C14.8595 18.0009 14.8731 18.0011 14.8857 17.9973C16.681 17.457 18.372 16.6171 19.8874 15.5131C19.8948 15.508 19.901 15.5013 19.9056 15.4935C19.9102 15.4858 19.913 15.4771 19.914 15.4681C20.3307 11.2232 19.2157 7.5348 16.9565 4.26648C16.951 4.25586 16.9418 4.24758 16.9307 4.24315ZM6.68323 13.2315C5.69823 13.2315 4.88573 12.3407 4.88573 11.2482C4.88573 10.1548 5.6824 9.2648 6.68323 9.2648C7.69156 9.2648 8.49656 10.1623 8.48072 11.2482C8.48072 12.3415 7.68406 13.2315 6.68323 13.2315ZM13.329 13.2315C12.3432 13.2315 11.5315 12.3407 11.5315 11.2482C11.5315 10.1548 12.3274 9.2648 13.329 9.2648C14.3374 9.2648 15.1424 10.1623 15.1265 11.2482C15.1265 12.3415 14.3382 13.2315 13.329 13.2315Z" fill="#5A6475"/>
-  </g>
-  <defs>
-    <clipPath id="clip0_1313_829">
-      <rect width="20" height="20" fill="white"/>
-    </clipPath>
-  </defs>
-</svg>
+                    <g clip-path="url(#clip0_1313_829)">
+                      <path d="M16.9307 4.24315C15.6557 3.66815 14.289 3.24315 12.8599 3.00148C12.8471 2.99904 12.834 3.00061 12.8222 3.00599C12.8104 3.01136 12.8006 3.02027 12.794 3.03148C12.619 3.33898 12.424 3.73981 12.2874 4.05648C10.7716 3.83001 9.23064 3.83001 7.71489 4.05648C7.56267 3.70553 7.39102 3.36334 7.20073 3.03148C7.19428 3.02013 7.18452 3.01102 7.17276 3.00537C7.16099 2.99971 7.14779 2.99777 7.13489 2.99982C5.70656 3.24148 4.3399 3.66648 3.06407 4.24231C3.05309 4.24692 3.04379 4.25477 3.0374 4.26481C0.444078 8.0773 -0.266754 11.7957 0.0824121 15.4673C0.0833837 15.4763 0.0861751 15.485 0.0906162 15.4929C0.0950574 15.5008 0.101055 15.5077 0.108245 15.5131C1.6219 16.6152 3.31018 17.4547 5.1024 17.9965C5.11489 18.0003 5.12826 18.0003 5.14074 17.9964C5.15323 17.9926 5.16426 17.985 5.1724 17.9748C5.5574 17.4581 5.90073 16.9123 6.19406 16.339C6.21156 16.3056 6.1949 16.2656 6.1599 16.2523C5.62157 16.0496 5.09997 15.8049 4.5999 15.5206C4.59091 15.5155 4.58334 15.5082 4.57786 15.4995C4.57239 15.4907 4.56917 15.4807 4.56851 15.4704C4.56785 15.46 4.56976 15.4497 4.57408 15.4403C4.57839 15.4309 4.58498 15.4227 4.59323 15.4165C4.69823 15.339 4.80323 15.2581 4.90323 15.1773C4.91223 15.17 4.92308 15.1654 4.93455 15.1639C4.94603 15.1625 4.95769 15.1642 4.96823 15.169C8.24072 16.639 11.7849 16.639 15.019 15.169C15.0296 15.1639 15.0414 15.162 15.053 15.1633C15.0647 15.1646 15.0757 15.1692 15.0849 15.1765C15.1849 15.2581 15.289 15.339 15.3949 15.4165C15.4032 15.4226 15.4099 15.4307 15.4144 15.44C15.4188 15.4493 15.4209 15.4596 15.4204 15.4699C15.4199 15.4802 15.4168 15.4903 15.4115 15.4991C15.4062 15.508 15.3988 15.5154 15.3899 15.5206C14.8915 15.8073 14.3732 16.0498 13.829 16.2515C13.8207 16.2545 13.8131 16.2593 13.8067 16.2655C13.8003 16.2717 13.7954 16.2792 13.7922 16.2875C13.7889 16.2958 13.7875 16.3047 13.788 16.3135C13.7884 16.3224 13.7908 16.3311 13.7949 16.339C14.0949 16.9115 14.4382 17.4565 14.8157 17.974C14.8236 17.9846 14.8345 17.9925 14.847 17.9967C14.8595 18.0009 14.8731 18.0011 14.8857 17.9973C16.681 17.457 18.372 16.6171 19.8874 15.5131C19.8948 15.508 19.901 15.5013 19.9056 15.4935C19.9102 15.4858 19.913 15.4771 19.914 15.4681C20.3307 11.2232 19.2157 7.5348 16.9565 4.26648C16.951 4.25586 16.9418 4.24758 16.9307 4.24315ZM6.68323 13.2315C5.69823 13.2315 4.88573 12.3407 4.88573 11.2482C4.88573 10.1548 5.6824 9.2648 6.68323 9.2648C7.69156 9.2648 8.49656 10.1623 8.48072 11.2482C8.48072 12.3415 7.68406 13.2315 6.68323 13.2315ZM13.329 13.2315C12.3432 13.2315 11.5315 12.3407 11.5315 11.2482C11.5315 10.1548 12.3274 9.2648 13.329 9.2648C14.3374 9.2648 15.1424 10.1623 15.1265 11.2482C15.1265 12.3415 14.3382 13.2315 13.329 13.2315Z" fill="#5A6475"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1313_829">
+                        <rect width="20" height="20" fill="white"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
                 </div>
               </div>
               <div className="relative leading-[20px] whitespace-pre-wrap inline-block w-[1216px]">
