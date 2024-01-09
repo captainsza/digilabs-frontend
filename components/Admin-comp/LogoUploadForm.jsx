@@ -22,8 +22,8 @@ const LogoUploadForm = ({ buttonText }) => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="text-2xl font-bold text-purple-500">Logo Upload</h2>
+    <div className="flex flex-col items-center mb-8">
+      <h2 className="text-2xl font-bold text-purple-500 mb-2">Logo Upload</h2>
       <input
         type="file"
         accept="image/*"

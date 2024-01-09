@@ -15,8 +15,8 @@ const ButtonTextForm = ({ onButtonTextUpdate }) => {
   };
 
   return (
-    <div className="flex flex-col items-center">
-      <h2 className=" text-2xl font-bold mb-4 text-purple-500">Update Button Text</h2>
+    <div className="flex flex-col items-center mb-8">
+      <h2 className="text-2xl font-bold mb-4 text-purple-500">Update Button Text</h2>
       <input
         type="text"
         value={newText}
@@ -25,7 +25,7 @@ const ButtonTextForm = ({ onButtonTextUpdate }) => {
       />
       <button
         onClick={handleTextUpdate}
-        className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+        className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 mt-2"
       >
         Update
       </button>

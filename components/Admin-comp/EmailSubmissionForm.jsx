@@ -12,7 +12,6 @@ const EmailSubmissionForm = () => {
       console.error(error);
     }
   };
-
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h2 className="text-2xl font-bold mb-2 text-purple-500">Email Submission</h2>

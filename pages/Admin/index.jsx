@@ -11,7 +11,7 @@ const AdminPage = () => {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen p-8 items-center text-center">
+    <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white min-h-screen p-8 flex flex-col items-center justify-center shadow-lg">
       <h1 className="text-4xl font-bold mb-8">Admin Panel</h1>
       <ButtonTextForm onButtonTextUpdate={handleButtonTextUpdate} />
       <EmailSubmissionForm />
