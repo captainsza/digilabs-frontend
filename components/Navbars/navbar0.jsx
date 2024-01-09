@@ -33,7 +33,7 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            <div className="flex flex-row items-start justify-start gap-[16px]">
+            <div className="flex flex-row items-start justify-start gap-[10px]">
               <div className="flex flex-col items-start justify-start p-2">
                 <div className="flex flex-row items-center justify-start gap-[8px]">
                   <div className="relative leading-[20px] font-medium">
@@ -84,7 +84,7 @@ const Navbar = () => {
               <div className="flex flex-row items-center justify-center">
                 <Link href="/Admin" passHref style={{ textDecoration: 'none' }}>
                   <motion.div
-                    className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[8px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
+                    className="rounded-lg bg-neutral-1200 flex flex-row items-center justify-center py-2 px-4 gap-[4px] hover:bg-neutral-1300 cursor-pointer transition-colors duration-200"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     

@@ -7,8 +7,8 @@ import XLDesktop from "./XLdesktopsrn";
 export default function Home() {
   const isXLDesktop = useMediaQuery({ query: "(min-width: 1600px)" });
   const isDesktop = useMediaQuery({ query: "(min-width: 790px) and (max-width: 1600px)" });
-  const isTablet = useMediaQuery({ query: "(min-width: 400px) and (max-width: 790px)" });
-  const isMobile = useMediaQuery({ query: "(max-width: 400px)" });
+  const isTablet = useMediaQuery({ query: "(min-width: 440px) and (max-width: 790px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 440px)" });
 
   return (
     <main>

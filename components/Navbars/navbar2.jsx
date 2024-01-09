@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="bg-white flex flex-col items-center justify-center py-5 px-8 text-neutral-400 font-h50-16-bold border-b-[1px] border-solid border-neutral-1000">
         <div className="flex flex-col items-center justify-center py-0 px-8">
           <div className="w-[640px] flex flex-row items-center justify-between">
-            <div className="flex flex-col items-start justify-center p-2">
+          <div className={`flex flex-col items-start justify-center p-2 ${logoUrl ? 'w-[84px] h-[84px] rounded-full' : 'w-[84px] h-4'}`}>
               <div className="flex flex-col items-start justify-start py-1 px-2">
                 <img
                   className="relative w-[84px] h-4 object-cover"
