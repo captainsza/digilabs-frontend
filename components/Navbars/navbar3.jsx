@@ -28,7 +28,7 @@ const Navbar = () => {
                 <img
                   className="relative w-[84px] h-4 object-cover"
                   alt=""
-                  src={logoUrl ? logoUrl : '/images/Vector.jpg'}
+                  src={logoUrl}
                 />
               </div>
             </div>
