@@ -29,7 +29,7 @@ const Navbar = () => {
                 <img
                   className="relative w-full h-full object-cover"
                   alt="logo"
-                  src={logoUrl ? logoUrl : '/images/Vector.jpg'}
+                  src={logoUrl}
                 />
               </div>
             </div>
